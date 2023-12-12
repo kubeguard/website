@@ -1,0 +1,13 @@
+---
+title: Docs | Guard
+description: Guard Docs
+menu:
+  docs_0.2.0:
+    identifier: welcome
+    name: Welcome
+    weight: 10
+left_menu: docs_0.2.0
+info:
+  version: 0.2.0
+---
+
