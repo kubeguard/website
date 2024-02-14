@@ -254,6 +254,15 @@
 .pricing-body li:last-child {
   border-bottom: none;
 }
+.tooltip.is-tooltip-primary:not(.is-loading){
+    &::before{
+      opacity: 1;
+      background: $ac-primary;
+    }
+    &::after{
+      border-color: $ac-primary transparent transparent transparent;
+    }
+  }
 
 .single-pricing-table.details .pricing-body {
   border-radius: 8px;
