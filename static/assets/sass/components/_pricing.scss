@@ -257,10 +257,10 @@
 .tooltip.is-tooltip-primary:not(.is-loading){
     &::before{
       opacity: 1;
-      background: $ac-primary;
+      background: $ac-color-text;
     }
     &::after{
-      border-color: $ac-primary transparent transparent transparent;
+      border-color: $ac-color-text transparent transparent transparent;
     }
   }
 
