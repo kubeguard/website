@@ -15,7 +15,7 @@
     h1 {
       strong {
         color: $ac-primary;
-      }
+       }
     }
     &.elasticsearch {
       background: rgb(185, 128, 208);
@@ -127,14 +127,6 @@
       );
     }
 
-    // h1 {
-    //   font-size: 4rem;
-    // }
-
-    // .tag {
-    //   border: 1px solid $ac-white-light;
-    // }
-
     .cube,
     .circle {
       border-color: #333333;
@@ -168,7 +160,7 @@
   }
   &.is-dark {
     &.is-gradient {
-      background: linear-gradient(-45deg, #a8356d, $ac-primary, #4c346f, $ac-primary);
+      background: linear-gradient(-45deg, #a8356d, #940148, #4c346f, $ac-primary);
       background-size: 200% 200%;
       animation: gradient 15s ease infinite;
     }
@@ -236,6 +228,7 @@
     }
   }
 }
+
 .news-message {
   display: inline-flex;
   font-family: "Inter";
@@ -261,6 +254,7 @@
     color: $ac-primary;
   }
 }
+
 .hero-area-code-editor {
   opacity: 0;
   visibility: hidden;
@@ -407,7 +401,7 @@
 
 .social-prove-brand-area {
   .brand-image-wrapper {
-    padding: 30px 0;
+    padding: 16px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -415,6 +409,11 @@
     width: 100%;
 
     .single-brand {
+      padding: 12px 24px;
+      border: 1px solid $ac-white-light;
+      border-radius: 2px;
+      display: flex;
+      align-items: center;
       img {
         max-height: 2rem;
         filter: grayscale(1);
@@ -473,10 +472,12 @@ Responsive Classes
       }
     }
   }
+
   .news-message-wrapper {
     display: flex;
     justify-content: center;
   }
+
   .hero-area-code-editor {
     max-width: calc(100vw - 30px);
     margin: 0 auto;
@@ -488,7 +489,7 @@ Responsive Classes
 
   .social-prove-brand-area {
     .brand-image-wrapper {
-      padding: 30px 0;
+      padding: 16px 0;
       padding-bottom: 0px;
       justify-content: center;
 
@@ -555,10 +556,6 @@ Responsive Classes
   .social-prove-brand-area {
     .brand-image-wrapper {
       justify-content: center;
-
-      .single-brand {
-        padding: 0 10px;
-      }
     }
   }
 }
@@ -577,7 +574,7 @@ Responsive Classes
   }
   .social-prove-brand-area {
     .brand-image-wrapper {
-      padding: 30px 0;
+      padding: 16px 0;
     }
   }
   .hero-area-code-editor {

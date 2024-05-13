@@ -3,14 +3,6 @@
   position: relative;
   z-index: 99;
   background-color: $ac-white;
-  span.whats-new.bubble.is-block {
-    right: -12px;
-    top: 0;
-    @media (min-width: 0px) and (max-width: 1023.98px) {
-      right: 32px;
-      top: 4px;
-    }
-  }
 }
 
 .navbar-appscode-wrapper {
@@ -136,16 +128,16 @@
       display: flex;
       align-items: center;
       gap: 32px;
-      .buttons {
+      .buttons{
         iframe {
           transition: 0.3s ease-in-out;
           &:hover {
-            box-shadow: 2px 4px 24px rgba(0, 0, 0, 0.3) !important;
+            box-shadow: 2px 4px 24px rgba(0,0,0,.3)!important;
             transform: translateY(-2px);
           }
         }
         .button {
-          &:has(.tag) {
+          &:has(.tag){
             gap: 4px;
           }
           .tag {
@@ -160,7 +152,7 @@
         align-items: flex-start;
         gap: 16px;
         width: 100%;
-        .buttons {
+        .buttons{
           width: 100%;
           .button {
             width: 100%;
@@ -1167,18 +1159,27 @@ Responsive Classes
       margin-left: 0;
       border-left: none;
     }
-
+    .navbar-left {
+      .navbar-brand {
+        margin-right: 1rem;
+      }
+    }
     .navbar-right {
       width: calc(100% - 180px);
 
       .community-items.ml-70 {
         margin-left: 10px !important;
       }
+      .button.ac-button {
+        padding: .5rem 1rem;
+      }
     }
-
+    .navbar-right-group {
+      gap: 8px !important;
+    }
     ul {
       .nav-item {
-        margin-right: 1.5rem;
+        margin-right: 0.5rem;
       }
     }
   }
@@ -1225,33 +1226,17 @@ Responsive Classes
       margin-left: 0;
       border-left: none;
     }
-    .navbar-left {
-      .navbar-brand {
-        margin-right: 1rem;
-      }
-    }
     .navbar-right {
       width: calc(100% - 180px);
 
       .community-items.ml-70 {
         margin-left: 10px !important;
       }
-
-      .button.ac-button {
-        padding: 0.5rem 1rem;
-      }
-    }
-    .navbar-right-group {
-      gap: 8px !important;
-
-      .ac-searchbar {
-        width: 34%;
-      }
     }
 
     ul {
       .nav-item {
-        margin-right: 0.5rem;
+        margin-right: 1.5rem;
       }
     }
   }
@@ -1275,21 +1260,9 @@ Responsive Classes
 
 @media (min-width: 1408px) and (max-width: 1600px) {
   .navbar-appscode {
-    &.documentation-menu {
-      .navbar-right {
-        .ac-searchbar {
-          width: 34%;
-        }
-      }
-    }
     .navbar-left {
       .navbar-brand {
         margin-right: 3rem;
-      }
-    }
-    ul {
-      .nav-item {
-        margin-right: 1.5rem;
       }
     }
   }
