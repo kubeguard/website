@@ -3,7 +3,8 @@
   "version": "0.2.0",
   "description": "KubeStash Website",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass:watch": "sass --no-source-map --watch ./themes/hugo-product-theme/assets/sass/main.scss:./themes/hugo-product-theme/assets/css/main.css"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,8 @@
   "homepage": "https://github.com/kubedb/website#readme",
   "devDependencies": {
     "autoprefixer": "^9.8.8",
-    "postcss-cli": "^9.1.0"
+    "postcss-cli": "^9.1.0",
+    "sass": "^1.99.0"
   },
   "private": true,
   "dependencies": {
