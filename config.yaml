@@ -52,6 +52,15 @@ menu:
   main:
   - name: Documentation
     weight: 20
+  product_guard:
+  - name: Features
+    url: /features/
+    weight: 10
+  - name: Pricing
+    url: /pricing/
+    weight: 15
+  - name: Documentation
+    weight: 20
 markup:
   goldmark:
     renderer:
