@@ -6,6 +6,7 @@ googleAnalytics: UA-62096468-4
 disableKinds:
 - taxonomy
 - taxonomyTerm
+theme: hugo-product-theme
 params:
   product_key: guard
   main_menu_dropdown_item: database
